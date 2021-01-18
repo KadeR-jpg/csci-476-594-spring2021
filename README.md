@@ -1,2 +1,4 @@
-# csci-476-spring2021-private
+# CSCI 476
+## Kade Pitsch
+## kadecarter82@gmail.com
 Private repo for computer security
