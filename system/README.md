@@ -20,13 +20,13 @@ I think the reason for the distinction between program and code data is that we 
 ### Question Four
 A big threat to be aware of would being able to get access to sertain parts of memory that you normally woul dnot be able to access. These can reveal very very important things if access could be gained.
 
-## Question Five
+### Question Five
 A trust boundary is where data is passed between two processes. A location where the data changes its level of trust.
 
-## Question Six
+### Question Six
 Stack Frame Pointer, Return Address and Function params.
 
-## Question Seven
+### Question Seven
 Main
 : In a part of memory that is executable.
 
@@ -39,7 +39,7 @@ argv
 environ
 : also placed onto the stack.
 
-## Question Eight
+### Question Eight
 Steps of complilation discussed in class were.
 Preprocessor: resolves directives, .i files
 
