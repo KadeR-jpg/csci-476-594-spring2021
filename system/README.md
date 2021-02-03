@@ -1,5 +1,8 @@
 # Systems and Software
-## CSCI 476, Kade Pitsch: kadecarter82@gmail.com
+# Kade, Pitsch(t12r458)
+# kadecarter82@gmail.com
+# CSCI 476
+# 02/02/2021
 ### Question One
 Fork
 : A fork simply creates a new process by copying the process that is calling it and this new process is called a child process.
