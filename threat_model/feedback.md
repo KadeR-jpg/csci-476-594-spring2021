@@ -1,0 +1,4 @@
+- Looks good!
+- Please fix the header for your submission. See https://www.traviswpeters.com/cs476-2021-spring/labs#example-structure-of-a-lab-report-readmemd.
+- Please run spell check on your README!
+- NOTE: Your james bond image is broken! 
