@@ -62,15 +62,21 @@ After altering the code in `exploit.py` and several attempts where i figured my 
 
 ### Task 4.1: w/o setuid(0)
 Here we run the programs with the original configuration and we can see that the `uid = 1000` which informs us that this is a non-root program
+
+
 ![dash stuff](Images/task4_noSETUID.png)
 
 ### Task 4.1: w/setuid(0)
 After changing the `call_shellcode.c` to set the id to 0 we recompile the programs and get the `uid=0` which informs us that the programs are now root.
+
+
 ![other dash stuff](Images/task4_SETUID.png)
 
 ### Task 4.2: Lauch the attack again.
 
 After we updated the shellcode to `setuid(0)` we can see that we launched the attack again and got the root shell
+
+
 ![attack with setuid](Images/4.2_correct.png)
 
 ## Task 5: Defeating ASLR
@@ -83,6 +89,8 @@ We can see that after turning stack and heap randomization back on that our atta
 ### Task 5.2
 
 Our brute force attack took 1 minute and 32 seconds with 34,131 iterations
+
+
 ![task5.2](Images/bruteForce_sh.png)
 
 ## Task 6: Other countermeasures
@@ -90,23 +98,35 @@ Our brute force attack took 1 minute and 32 seconds with 34,131 iterations
 ### Task 6.1: Stackguard
 
 Here we have the original code with the protection off
+
+
 ![task 6.1 OFF](Images/6.1_stackOFF.png)
 
 We run the attack again and it obviously still works
+
+
 ![task 6.1 OFF](Images/6.1_StackOFF_stillWorks.png)
 
 
 Then we turn that protection back on since it is enabled by default
+
+
 ![task 6.1 ON](Images/6.1_stackON.png)
 
 And we can see that our exploit no longer works
+
+
 ![task 6.1 ON](Images/6.1_stackON_notWorking.png)
 
 
 ### Task 6.2: Turn on the nonexec protection
 
 Below you can see that we have removed the `-z execstack` flag from the makefile 
+
+
 ![task 6.2](Images/6.2_execStackOFF.png)
 
 And below you can see that our programs no longer execute because we are no longer allowed to place shellcode directly on the stack.
+
+
 ![task 6.2](Images/6.2_withExecOFF.png)
