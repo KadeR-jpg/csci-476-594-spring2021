@@ -44,4 +44,17 @@ In the image below you can see the two programs compiling. We can pipe the outpu
 
 ![Task 3](Images/task3.2.png)
 ## Task 4: Making the Two Programs Behave Differently
-Array one starts at 0x3020(Decimal 12320) placing the data in the middle of the array at position 0x30cb(Decimal 12491)
+Array one starts at 0x3020(Decimal 12320) placing the data in the middle of the array at position 0x3040(Decimal 12352) Which is also divisible by 64. Then we want to get everything that is after the first array which is 0x31b0(Decimal 12720) Then we need the position of array 2 which is 0x31c0(Decimal 12736)
+After locating the length of the prefix i split the file at that location. and checked the hash of the two generated files. They are the same
+
+![Task 4](Images/task4.1.png)
+
+Here i found the the beginning of the array in the suffix file and then split the head. I see that i made a mistake and called head twice so i am sure that is where i was going wrong
+
+![Task 4](Images/task4.2.png)
+
+After several attempts at splitting the file by head and tail i could only get the malicious code to execute
+
+![Task 4](Images/task4.5.png)
+![Task 4](Images/task4.png)
+ I am not sure what i am doing wrong, just needed to spend more time on thic portion.
